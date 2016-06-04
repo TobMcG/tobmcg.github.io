@@ -1,0 +1,64 @@
+/*http://colorbrewer2.org/?type=qualitative&scheme=Set3&n=9*/
+
+body {
+  margin: 0;
+  background: black;
+}
+
+body svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#timestamp, #elapsed {
+  color: white;
+  cursor: wait;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18px;
+  font-weight: 300;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+}
+#elapsed {
+  top: 1.6em;
+}
+#timestamp:hover {
+  color: red;
+}
+#title {
+  color: white;
+  cursor: default;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: right;
+  line-height: 100%;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+#title span {
+  opacity: 0;
+}
+
+path.glow {
+  fill: none;
+  stroke: white;
+  stroke-width: 3px;
+}
+
+path.ocean {
+  fill: rgba(255,255,255,1);
+}
+
+path.land {
+  fill: rgba(0,0,0,1);
+}
+
+path.countries {
+  fill: none;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 0.3px;
+}
