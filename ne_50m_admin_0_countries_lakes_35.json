@@ -1,4 +1,4 @@
-var world50m_35 = {
+{
   "type": "Topology",
   "transform": {
     "scale": [
@@ -259,4 +259,4 @@ var world50m_35 = {
       ]
     }
   }
-};
+}

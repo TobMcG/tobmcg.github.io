@@ -14,32 +14,33 @@ var projection = d3.geo.orthographic()
 var path = d3.geo.path()
     .projection(projection);
 
-var svg = d3.select("body").append("svg")
+var globe = d3.select("body").append("svg")
+    .attr("class", "globe")
     .attr("width", width)
     .attr("height", height);
 
 $(window).ready(function() {
 
-  var land = topojson.feature(world50m_35_dissolved, world50m_35_dissolved.objects.ne_50m_admin_0_countries_lakes);
+  var land = topojson.feature(world50m_30_dissolved, world50m_30_dissolved.objects.ne_50m_admin_0_countries_lakes);
   var ocean = topojson.feature(bounds50m, bounds50m.objects.ne_50m_wgs84_bounding_box.geometries[0]);
-  var countries = topojson.mesh(world50m_35, world50m_35.objects.ne_50m_admin_0_countries_lakes, function(a, b) { return a !== b; });
+  var countries = topojson.mesh(world50m_30, world50m_30.objects.ne_50m_admin_0_countries_lakes, function(a, b) { return a !== b; });
 
-  svg.append("path")
+  globe.append("path")
       .datum(ocean)
       .attr("class", "glow")
       .attr("d", path);
 
-  svg.append("path")
+  globe.append("path")
       .datum(ocean)
       .attr("class", "ocean")
       .attr("d", path);
 
-  svg.append("path")
+  globe.append("path")
       .datum(land)
       .attr("class", "land")
       .attr("d", path);
 
-  svg.append("path")
+  globe.append("path")
       .datum(countries)
       .attr("class", "countries")
       .attr("d", path);
@@ -57,7 +58,7 @@ $(window).ready(function() {
       elapsedms = Date.now() - mousein;
       elapsed = new Date(elapsedms);
       $('#elapsed').html('ELAPSED'
-        + ' ' + padZerosToLength((elapsedms/10000000).toString().substring(0,1),19)
+        + ' ' + padZerosToLength((elapsedms/10000000).toString().substring(0,1),15)
         + ':' + padZerosToLength(elapsed.getMinutes().toString(), 2)
         + ':' + padZerosToLength(elapsed.getSeconds().toString(), 2)
         + '.' + padZerosToLength(elapsed.getMilliseconds().toString(), 3)
@@ -105,7 +106,6 @@ function animate() {
   var now = new Date(ms);
   var displayNow = now.toString().substring(0,15)
   + '' + now.toString().substring(15,24)
-  + '.' + padZerosToLength(now.getMilliseconds().toString(), 3)
   + '' + now.toString().substring(24,33);
 
   $('#timestamp').html(displayNow.toUpperCase());
@@ -113,8 +113,8 @@ function animate() {
   var angle = velocity * (ms - then);
   var rotate = [-angle,0,30];
   projection.rotate(rotate);
-  svg.selectAll("path.land").attr("d", path);
-  svg.selectAll("path.countries").attr("d", path);
+  globe.selectAll("path.land").attr("d", path);
+  globe.selectAll("path.countries").attr("d", path);
 
   return animateBool;
 
