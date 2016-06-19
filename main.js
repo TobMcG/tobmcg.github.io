@@ -46,12 +46,13 @@ $(window).ready(function() {
       .attr("d", path);
 
   d3.timer(animate);
+  $('#elapsed').css("opacity", 0);
 
   $('#timestamp').on('mouseover', function() {
 
     animateBool = true;
     elapsedBool = false;
-    $('#elapsed').show();
+    $('#elapsed').css("opacity", 1);
     $('path.glow').css('stroke', 'red');
     mousein = Date.now();
     d3.timer(function() {
@@ -70,7 +71,7 @@ $(window).ready(function() {
 
     animateBool = false;
     elapsedBool = true;
-    $('#elapsed').hide();
+    $('#elapsed').css("opacity", 0);
     $('path.glow').css('stroke', '');
     elapsed = Date.now() - mousein;
     then = then + elapsed;
