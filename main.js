@@ -101,6 +101,10 @@ $(window).ready(function() {
 
 });
 
+$(window).on('resize', function() {
+  location.reload();
+});
+
 function animate() {
 
   var ms = Date.now();
