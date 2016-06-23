@@ -35,7 +35,7 @@ var scenesJSON = [{
     "type": "Feature",
     "properties": {
     	"name": "Uptown Swing",
-    	"description": 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet magna et leo feugiat sodales. Nulla dapibus fermentum mattis. Etiam ligula ligula, scelerisque quis consectetur sed, fermentum sit amet urna. Integer luctus, lorem eget rutrum consectetur, felis risus interdum nulla, sed dapibus urna velit vel risus. Ut porta efficitur orci nec ullamcorper. Quisque pellentesque consectetur commodo. Phasellus semper pellentesque auctor. Praesent pharetra ornare sodales. Aliquam vel laoreet turpis. Pellentesque et orci ipsum. Ut sagittis ornare lacus, et pharetra justo venenatis vitae. Nam eget vulputate neque.',
+    	"description": 'Mauris at erat vehicula nulla malesuada tincidunt et et nisi. Aenean vulputate, risus quis egestas scelerisque, justo lectus commodo erat, a dignissim nulla magna a lacus. Proin efficitur turpis vitae ultrices hendrerit. Suspendisse eget augue sit amet velit pharetra consectetur ut ut nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur convallis justo, ut malesuada ipsum consectetur nec. Aenean vitae felis in lorem posuere auctor a ut lacus. Proin sem felis, facilisis quis pretium non, vulputate sit amet felis. Morbi justo odio, hendrerit quis lectus nec, lacinia ornare risus. Mauris congue lobortis nisi ac dignissim.',
     },
     "geometry": {
         "type": "Point",
@@ -55,7 +55,7 @@ var scenesJSON = [{
     "type": "Feature",
     "properties": {
     	"name": "Step Into Swing",
-    	"description": 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet magna et leo feugiat sodales. Nulla dapibus fermentum mattis. Etiam ligula ligula, scelerisque quis consectetur sed, fermentum sit amet urna. Integer luctus, lorem eget rutrum consectetur, felis risus interdum nulla, sed dapibus urna velit vel risus. Ut porta efficitur orci nec ullamcorper. Quisque pellentesque consectetur commodo. Phasellus semper pellentesque auctor. Praesent pharetra ornare sodales. Aliquam vel laoreet turpis. Pellentesque et orci ipsum. Ut sagittis ornare lacus, et pharetra justo venenatis vitae. Nam eget vulputate neque.',
+    	"description": 'Nam pharetra in massa vel vehicula. Nam bibendum id libero quis varius. Proin in interdum nibh, iaculis sodales nunc. Fusce sodales euismod ligula vitae malesuada. Nulla et porttitor orci. Etiam et venenatis est. Aenean augue dui, ullamcorper eget sagittis eget, rutrum sit amet mi. Cras sed turpis posuere, molestie eros at, facilisis urna. Suspendisse potenti. Nulla fringilla turpis felis, a elementum nibh efficitur sit amet. Etiam elementum tristique odio vitae finibus. Pellentesque et maximus magna.',
     },
     "geometry": {
         "type": "Point",
