@@ -48,7 +48,7 @@ body {
     font-style: normal;
     width: calc(100% - var(--mainContentMargin) * 2 - var(--mainContentMargin) * 2 / 3 - var(--mainContentBorderWidth) * 2);
     height: calc(100% - var(--mainContentMargin) * 7 / 3 - var(--mainContentBorderWidth) * 2);
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     border: var(--mainContentBorderWidth) solid #C23627;
     margin: var(--mainContentMargin);
     padding-top: 0;

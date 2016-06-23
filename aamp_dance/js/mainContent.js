@@ -63,6 +63,7 @@ function loadMainContent(image) {
                 }],
             },
         ]));
+        $('ul#menu img').attr("src", "assets/pics/portrait.jpg");
 
         break;
 
@@ -75,11 +76,13 @@ function loadMainContent(image) {
                     subheading: '',
                     paragraphs: [
                         'Alex and Alissa have performed for audiences at <span style="font-style: italic;">regional</span> and <span style="font-style: italic;">national</span> competitions, <span style="font-style: italic;">corporate events</span>, and <span style="font-style: italic;">cultural festivals.</span>',
+                        '<iframe width="420" height="315" src="https://www.youtube.com/embed/Uu7EGobp5J8"></iframe>',
                         'Please contact us if you are looking to spice up your next event!',
                     ],
                 }],
             },
         ]));
+        $('ul#menu img').attr("src", "assets/pics/drag.jpg");
 
         break;
 
@@ -100,12 +103,14 @@ function loadMainContent(image) {
                 }],
             },
         ]));
+        $('ul#menu img').attr("src", "assets/pics/drag.jpg");
 
         break;
 
     case 'wood-pattern-ground-parquet-floor':
 
         $('#mainContent div').html("");
+        $('ul#menu img').attr("src", "assets/pics/portrait.jpg");
         break;
 
     default:

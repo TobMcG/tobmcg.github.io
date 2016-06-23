@@ -2,6 +2,7 @@ function loadBackgroundPic(element, image, position) {
 
     var grayscale = '0.6';
     $('#mainContent').animate({ opacity: 0, }, { duration: 1000, });
+    $('ul#menu img').animate({ opacity: 0, }, { duration: 1000, });
     deanimateMenuItem($('.active'));
     setupHoverEvents();
 
@@ -24,7 +25,6 @@ function loadBackgroundPic(element, image, position) {
 
     } else {
         $('.active').removeClass('active');
-        $('ul#menu img').animate({ opacity: 0, }, { duration: 1000, });
         image = 'intense';
         position = 'left bottom';
         grayscale = '0';
