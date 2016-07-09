@@ -1,3 +1,14 @@
 body {
   margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+#container {
+  width: 100%;
+  height: 100%;
+}
+.person {
+  height: 35px;
+  background-color: white;
+  border: 2px solid black;
 }
